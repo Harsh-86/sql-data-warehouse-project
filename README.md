@@ -32,6 +32,16 @@ Develop SQL-based analytics to deliver detailed insights into:
 
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
 
+### Data Architecture
+
+The data architecture for this project follows Medallion Architecture Bronze, Silver and Gold layers:
+
+<img width="1082" height="800" alt="Data Architecture" src="https://github.com/user-attachments/assets/0cff7b33-f552-47a2-b950-8113b0976701" />
+
+1. **Bronze Layer:** Stores raw data as-is from the source systems. Data is ingested from CSV files into SQL Server Database.
+2. **Silver Layer:** This layer includes data cleaning, standardization, and normalization processes to prepare data for analysis.
+3. **Gold Layer:** Houses business-ready data modeled into a star schema required for reporting and analytics.
+
 ---
 
 ## 🔗 License
